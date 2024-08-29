@@ -1,0 +1,92 @@
+body{
+  width: 100vh;
+  margin: 0px;
+  padding: 0px;
+}
+*{
+  box-sizing: border-box;
+}
+.container{
+ 
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4,350px);
+  grid-template-rows: 100px 400px 400px 100px;
+}
+.food-item{
+
+text-align: center;
+}
+img{
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  transition: transform 1s ease,filter 0.5s ease;
+}
+section{
+    
+      grid-column:1/5;
+      grid-template-rows: 200px;
+}
+
+
+.text{
+  text-align: center;
+  color: nlack;
+  font-size: 3rem;
+}
+.mail{
+  float: right;
+  font-size: 2rem;
+  padding: 10px;
+}
+.hamburger{
+     width: 100px;
+     float: left;
+     padding: 10px;
+}
+h3{
+  color: black;
+}
+.item{
+  padding: 2px;
+  margin: 1px;
+  text-align: center;
+  background-color: rgb(192, 190, 191);
+  display: none;
+  width: 100px;
+  left:-300px;
+  transition:all 1s ease-in;
+}
+input{
+  display: none;
+}
+.hamburger:hover>div{
+  display: block;
+  
+}
+.p:hover{
+  background-color: lightcoral;
+  color: white;
+}
+img:hover {
+  transform: scale(1.2);
+  filter: brightness(80%); 
+}
+p{
+  display: inline-block;
+  margin: 0 0.5rem;
+white-space: normal;
+  animation: rubberBand; 
+  animation-duration: 2s;
+}
+.animate__animated.animate__zoomIn {
+  --animate-duration: 2s;
+}
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+}
+.animate__animated.animate__rotateIn {
+  --animate-duration: 2s;
+}
